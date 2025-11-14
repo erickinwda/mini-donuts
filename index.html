@@ -17,19 +17,18 @@
       background-color: #ece5dd;
       width: 100%;
       height: 100vh;
-      overflow: auto;
+      overflow: hidden;
     }
 
     .whatsapp-container {
       width: 100%;
-      height: 100vh; /* Ajuste para usar toda a altura da tela */
+      height: 100vh;
       background-color: #fff;
       display: flex;
       flex-direction: column;
       margin: 0 auto;
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      max-width: 500px; /* Define um máximo para larguras maiores */
     }
 
     /* Cabeçalho estilo WhatsApp */
@@ -83,7 +82,7 @@
       border: none;
     }
 
-    /* Remove visualmente o selo "Made with Typebot" */
+    /* Estilo para manter o selo "Made with Typebot" visível */
     iframe::-webkit-scrollbar {
       display: block;
     }
@@ -92,25 +91,24 @@
       scrollbar-width: auto;
     }
 
-    /* Hiding Typebot branding */
+    /* Não escondendo o selo do Typebot */
     [typebot-branding],
     [data-testid="branding"],
     a[href*="typebot.io"],
     a[href*="typebot.co"] {
-      display: none !important;
-      visibility: hidden !important;
-      opacity: 0 !important;
-      height: 0 !important;
-      width: 0 !important;
+      display: inline !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      height: auto !important;
+      width: auto !important;
     }
 
-    @media (max-width: 600px) {
+    @media (min-width: 600px) {
       .whatsapp-container {
-        width: 100%;
-        height: 100%;
-        margin: 0;
+        width: 400px;
+        margin: 0 auto;
         border-radius: 10px;
-        box-shadow: none;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       }
     }
   </style>
@@ -128,7 +126,7 @@
 
     <div class="chat-body">
       <!-- Seu Typebot -->
-      <iframe src="https://typebot.co/my-typebot-jbx91v3" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
+      <iframe src="https://typebot.co/my-typebot-rkzw38n" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
     </div>
   </div>
 </body>
