@@ -1,133 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Mini Donuts 0 Ao Sucesso 💬</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: #ece5dd;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .whatsapp-container {
-      width: 100%;
-      height: 100vh;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Cabeçalho estilo WhatsApp */
-    .header {
-      background-color: #075e54;
-      color: white;
-      padding: 10px 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      height: 60px;
-    }
-
-    .header img {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .info h3 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 3px;
-    }
-
-    .info span {
-      font-size: 13px;
-      color: #c7c7c7;
-    }
-
-    /* Fundo do chat */
-    .chat-body {
-      flex: 1;
-      background-image: url("https://i.imgur.com/o7bXx2z.png");
-      background-size: cover;
-      overflow: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    /* Estilo para manter o selo "Made with Typebot" visível */
-    iframe::-webkit-scrollbar {
-      display: block;
-    }
-
-    iframe {
-      scrollbar-width: auto;
-    }
-
-    /* Não escondendo o selo do Typebot */
-    [typebot-branding],
-    [data-testid="branding"],
-    a[href*="typebot.io"],
-    a[href*="typebot.co"] {
-      display: inline !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      height: auto !important;
-      width: auto !important;
-    }
-
-    @media (min-width: 600px) {
-      .whatsapp-container {
-        width: 400px;
-        margin: 0 auto;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando para o Typebot...</title>
+    <style>
+        body {
+            background-color: #ece5dd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #075e54;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .loading {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="whatsapp-container">
-    <div class="header">
-      <img src="https://img.elo7.com.br/product/zoom/34713B6/donuts-cenografico.jpg?_gl=1*1q63b17*_gcl_au*NzkwMjg2ODg1LjE3NjMxMTE3MTY.*_ga*NDg2Nzk0MTg4LjE3NjMxMTE3MTY.*_ga_22YVRK2WCW*czE3NjMxMTE3MTUkbzEkZzAkdDE3NjMxMTE3MTUkajYwJGwwJGg5NjI1OTA2MTQ." alt="Perfil" />
-      <div class="info">
-        <h3>Mini Donuts 0 Ao Sucesso ✅</h3>
-        <span>Online agora</span>
-      </div>
+
+    <div class="container">
+        <h1>Mini Donuts 0 Ao Sucesso 💬</h1>
+        <p>Você será redirecionado para o atendimento VIP...</p>
+        <p class="loading">Aguarde, estamos redirecionando...</p>
     </div>
 
-    <div class="chat-body">
-      <!-- Seu Typebot -->
-      <iframe src="https://typebot.co/my-typebot-rkzw38n" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
-    </div>
-  </div>
+    <script>
+        // Redireciona automaticamente para o Typebot após 3 segundos
+        setTimeout(function() {
+            window.location.href = "https://typebot.co/my-typebot-jbx91v3";
+        }, 3000);
+    </script>
+
 </body>
 </html>
