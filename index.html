@@ -1,54 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecionando para o Typebot...</title>
-    <style>
-        body {
-            background-color: #ece5dd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: #075e54;
-            color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 16px;
-        }
-        .loading {
-            font-size: 20px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Donuts 0 Ao Sucesso 💬</title>
+
+  <style>
+    body {
+      background-color: #ece5dd;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .whatsapp-container {
+      width: 100%;
+      max-width: 480px;
+      height: 100vh; /* Ajuste para preencher toda a altura */
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    /* Cabeçalho estilo WhatsApp */
+    .header {
+      background-color: #075e54;
+      color: white;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 60px;
+    }
+
+    .header img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .info span {
+      font-size: 13px;
+      color: #c7c7c7;
+    }
+
+    /* Fundo do chat */
+    .chat-body {
+      flex: 1;
+      overflow-y: scroll;  /* Ativa a rolagem dentro do iframe */
+      display: flex;
+      flex-direction: column;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      overflow-y: auto;  /* Permite rolagem no conteúdo do iframe */
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Mini Donuts 0 Ao Sucesso 💬</h1>
-        <p>Você será redirecionado para o atendimento VIP...</p>
-        <p class="loading">Aguarde, estamos redirecionando...</p>
+  <div class="whatsapp-container">
+    <div class="header">
+      <img src="https://img.elo7.com.br/product/zoom/34713B6/donuts-cenografico.jpg" alt="Perfil" />
+      <div class="info">
+        <h3>Mini Donuts 0 Ao Sucesso ✅</h3>
+        <span>Online agora</span>
+      </div>
     </div>
 
-    <script>
-        // Redireciona automaticamente para o Typebot após 3 segundos
-        setTimeout(function() {
-            window.location.href = "https://typebot.co/my-typebot-kz22wwa";
-        }, 3000);
-    </script>
+    <div class="chat-body">
+      <!-- Seu Typebot -->
+      <iframe src="https://typebot.co/my-typebot-kz22wwa" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
+    </div>
+  </div>
 
 </body>
 </html>
