@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Mini Donuts 0 Ao Sucesso 💬</title>
 
   <style>
-    body {
-      background-color: #ece5dd;
+    * {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ece5dd;
+      width: 100%;
       height: 100vh;
+      overflow: auto;
     }
 
     .whatsapp-container {
       width: 100%;
-      max-width: 480px;
-      height: 100vh; /* Ajuste para preencher toda a altura */
+      height: 100vh; /* Ajuste para usar toda a altura da tela */
       background-color: #fff;
       display: flex;
       flex-direction: column;
       margin: 0 auto;
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
+      max-width: 500px; /* Define um máximo para larguras maiores */
     }
 
     /* Cabeçalho estilo WhatsApp */
@@ -67,7 +70,9 @@
     /* Fundo do chat */
     .chat-body {
       flex: 1;
-      overflow-y: scroll;  /* Ativa a rolagem dentro do iframe */
+      background-image: url("https://i.imgur.com/o7bXx2z.png");
+      background-size: cover;
+      overflow: auto;
       display: flex;
       flex-direction: column;
     }
@@ -76,7 +81,27 @@
       width: 100%;
       height: 100%;
       border: none;
-      overflow-y: auto;  /* Permite rolagem no conteúdo do iframe */
+    }
+
+    /* Remove visualmente o selo "Made with Typebot" */
+    iframe::-webkit-scrollbar {
+      display: block;
+    }
+
+    iframe {
+      scrollbar-width: auto;
+    }
+
+    /* Hiding Typebot branding */
+    [typebot-branding],
+    [data-testid="branding"],
+    a[href*="typebot.io"],
+    a[href*="typebot.co"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      height: 0 !important;
+      width: 0 !important;
     }
 
     @media (max-width: 600px) {
@@ -92,10 +117,9 @@
 </head>
 
 <body>
-
   <div class="whatsapp-container">
     <div class="header">
-      <img src="https://img.elo7.com.br/product/zoom/34713B6/donuts-cenografico.jpg" alt="Perfil" />
+      <img src="https://img.elo7.com.br/product/zoom/34713B6/donuts-cenografico.jpg?_gl=1*1q63b17*_gcl_au*NzkwMjg2ODg1LjE3NjMxMTE3MTY.*_ga*NDg2Nzk0MTg4LjE3NjMxMTE3MTY.*_ga_22YVRK2WCW*czE3NjMxMTE3MTUkbzEkZzAkdDE3NjMxMTE3MTUkajYwJGwwJGg5NjI1OTA2MTQ." alt="Perfil" />
       <div class="info">
         <h3>Mini Donuts 0 Ao Sucesso ✅</h3>
         <span>Online agora</span>
@@ -104,9 +128,8 @@
 
     <div class="chat-body">
       <!-- Seu Typebot -->
-      <iframe src="https://typebot.co/my-typebot-kz22wwa" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
+      <iframe src="https://typebot.co/my-typebot-jbx91v3" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
     </div>
   </div>
-
 </body>
 </html>
