@@ -17,16 +17,19 @@
       background-color: #ece5dd;
       width: 100%;
       height: 100vh;
-      overflow: hidden;
+      overflow: auto;
     }
 
     .whatsapp-container {
       width: 100%;
-      height: 100vh;
+      height: 100vh; /* Ajuste para usar toda a altura da tela */
       background-color: #fff;
       display: flex;
       flex-direction: column;
-      overflow: hidden;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      max-width: 500px; /* Define um máximo para larguras maiores */
     }
 
     /* Cabeçalho estilo WhatsApp */
@@ -69,7 +72,7 @@
       flex: 1;
       background-image: url("https://i.imgur.com/o7bXx2z.png");
       background-size: cover;
-      overflow: hidden;
+      overflow: auto;
       display: flex;
       flex-direction: column;
     }
@@ -82,13 +85,14 @@
 
     /* Remove visualmente o selo "Made with Typebot" */
     iframe::-webkit-scrollbar {
-      display: none;
+      display: block;
     }
 
     iframe {
-      scrollbar-width: none;
+      scrollbar-width: auto;
     }
 
+    /* Hiding Typebot branding */
     [typebot-branding],
     [data-testid="branding"],
     a[href*="typebot.io"],
@@ -100,12 +104,13 @@
       width: 0 !important;
     }
 
-    @media (min-width: 600px) {
+    @media (max-width: 600px) {
       .whatsapp-container {
-        width: 400px;
-        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        margin: 0;
         border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        box-shadow: none;
       }
     }
   </style>
@@ -123,7 +128,7 @@
 
     <div class="chat-body">
       <!-- Seu Typebot -->
-      <iframe src="https://typebot.co/my-typebot-45t3uo0" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
+      <iframe src="https://typebot.co/my-typebot-jbx91v3" allow="camera; microphone; autoplay; clipboard-read; clipboard-write"></iframe>
     </div>
   </div>
 </body>
